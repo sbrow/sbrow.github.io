@@ -1,0 +1,8 @@
+hugo.test {
+	root * ./public
+
+	encode zstd gzip
+	file_server
+
+	tls internal
+}
