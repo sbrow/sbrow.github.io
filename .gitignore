@@ -1,0 +1,7 @@
+.direnv
+.vagrant
+node_modules
+public
+resources
+vendor
+.hugo_build.lock

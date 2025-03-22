@@ -1,0 +1,32 @@
+baseURL: https://hugo.test/
+enableEmoji: true
+languageCode: en-us
+title: One Idiot Developer
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: doom-one2
+    # style: paraiso-dark
+theme: hugo-blog-awesome
+# theme: hugo-coder
+# theme: risotto
+params:
+  # Hugo Coder
+  # colorScheme: dark
+
+  # Hugo blog Awesome
+  author:
+    name: Spencer Browser
+    avatar: avatar.jpg
+    intro: One Idiot Developer
+    description: This is fine...right?
+  defaultColor: dark
+  goToTop: true
+  socialIcons:
+    - name: github
+      url: https://github.com/sbrow
+    - name: Rss
+      url: /index.xml
+sectionPagesMenu: main
