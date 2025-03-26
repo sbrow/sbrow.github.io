@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <h1 class="text-center">{{ .Title }}</h1>
+  {{ .Content }}
+  {{- range .Pages.GroupByDate "2006" -}}
+  {{- $year := .Key -}}
+  <section>
+    <h2>{{ $year }}</h2>
+    <hr class="text-slate-800 mb-1">
+    <ul>
+      {{ range .Pages -}}
+      <li class="flex justify-between">
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+
+        <span>
+          {{ if .Params.IsStarred }}
+          {{ partial "icons/icon" (dict "vendor" "bootstrap" "name" "star-fill" "className" "h-3.5 w-3.5 text-yellow-500 align-baseline mr-2") }}
+          {{ end }}
+          {{ if not .Date.IsZero -}}
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+              {{- time.Format "1 Jan 2006" .Date -}}
+          </time>
+          {{- end }}
+        </span>
+      </li>
+    {{ end }}</ul>
+  </section>
+  {{ end -}}
+{{- end -}}

@@ -1,5 +1,6 @@
 baseURL: https://hugo.test/
 enableEmoji: true
+enableGitInfo: true
 languageCode: en-us
 title: One Idiot Developer
 markup:
@@ -9,24 +10,17 @@ markup:
   highlight:
     style: doom-one2
     # style: paraiso-dark
-theme: hugo-blog-awesome
-# theme: hugo-coder
-# theme: risotto
 params:
-  # Hugo Coder
-  # colorScheme: dark
-
-  # Hugo blog Awesome
-  author:
-    name: Spencer Brower
-    avatar: avatar.jpg
-    intro: One Idiot Developer
-    description: This is fine...right?
-  defaultColor: dark
-  goToTop: true
+  images:
+    - avatar.jpg
+  icons:
+    throw_on_error: true
   socialIcons:
     - name: github
       url: https://github.com/sbrow
-    - name: Rss
+    - name: rss
       url: /index.xml
 sectionPagesMenu: main
+module:
+  imports:
+    - path: github.com/sbrow/sbrow.github.io/themes/my-theme

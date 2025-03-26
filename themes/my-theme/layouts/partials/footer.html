@@ -1,0 +1,16 @@
+<a class="goto-top opacity-0" href="#">{{ partial "icons/icon" (dict
+  "vendor" "lucide"
+  "name" "chevron-up"
+  "className" "h-10 w-10"
+) }}</a>
+{{- range .Site.Params.socialIcons }}
+<a href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me"
+    title="{{ (.title | default .name) | title }}">
+    {{ partial "icons/icon" (dict "vendor" "lucide" "name" .name "className" "h-7 w-7")}}
+</a>
+{{- end }}
+<p class="pt-5 prose">
+  Proudly built with <a href="https://gohugo.io/" target="_blank">Hugo</a>
+  and <a href="https://tailwindcss.com/">Tailwindcss</a>
+</p>
+<p><small>&copy;</small> {{ now.Year }} {{ .GitInfo.AuthorName }}</p>

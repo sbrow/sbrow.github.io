@@ -62,6 +62,9 @@
             buildInputs = with pkgs; [
               git
               unstable.hugo
+              unstable.tailwindcss_4
+
+              go
 
               config.treefmt.build.wrapper
               # Your packages here

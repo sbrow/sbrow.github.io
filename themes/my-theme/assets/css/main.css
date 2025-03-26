@@ -1,0 +1,134 @@
+/* TODO: Optimize Fonts to only use what we need */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* @import "tailwindcss" source(none); */
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  --text-lg: 20px;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-950 text-slate-200 min-h-screen leading-[1.8] relative;
+
+    > header {
+      @apply mb-4;
+    }
+
+    > footer {
+      @apply text-center text-sm text-slate-500 mb-8 mt-12 md:mt-32;
+    }
+  }
+
+  nav > ul {
+    @apply flex justify-end max-w-3xl mx-auto border-b border-slate-800
+           px-[5px] pt-2 pb-3;
+
+    a {
+      @apply py-[5px] px-2 leading-[36px];
+    }
+  }
+
+  a {
+    @apply text-slate-400 hover:text-slate-200;
+  }
+
+  time { @apply text-slate-500 font-mono; }
+
+  main {
+    @apply px-4 max-w-2xl mx-auto mt-24 md:px-2;
+  }
+}
+
+@layer components {
+  .goto-top {
+    @apply fixed bottom-16 right-8 bg-slate-800 z-1 rounded
+           transition-opacity duration-600;
+  }
+
+  .hi-svg-inline {
+    @apply inline;
+  }
+
+  .prose {
+    @apply space-y-[30px];
+
+    a {
+      @apply text-sky-300;
+
+      &:hover {
+        @apply text-sky-500;
+      }
+    }
+
+    ol, ul {
+      @apply ml-8 -mt-4;
+    }
+
+    ol {
+      @apply list-decimal;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+  }
+
+  h1 {
+    @apply text-3xl font-bold mt-2.5 mb-5;
+  }
+
+  h2 {
+    @apply mt-8 text-xl/10 font-bold;
+  }
+
+  /* TODO: Work on smaller headings */
+  h3, h4, h5, h6 {
+    @apply text-lg leading-9 font-bold my-4;
+  }
+
+  blockquote {
+    @apply border-l-5 border-gray-700 pl-4 text-slate-400;
+  }
+
+  p > code, li > code {
+    @apply rounded-sm bg-slate-800 border border-slate-800 pt-[3px] pb-[1px] px-1
+           text-slate-300;
+  }
+
+  main > pre:has(code) {
+    /* FIXME: */
+    @apply bg-gray-900;
+  }
+
+  .highlight:has(+ .highlight) {
+    @apply mb-3;
+  }
+
+  pre {
+    @apply -mx-5 py-2 px-4 my-2.5 overflow-x-auto rounded sm:mx-0;
+
+    &::-webkit-scrollbar {
+        @apply h-2;
+    }
+
+    /* TODO: Convert to tailwind */
+    &::-webkit-scrollbar-track {
+        background: #606071;
+        border-radius: .1rem
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #999ea2;
+        border-radius: .3rem
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #424546
+    }
+  }
+}
