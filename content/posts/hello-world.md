@@ -3,6 +3,7 @@ title:  Why Too Many Features Spoil The Language
 date: '2025-03-15T08:49:54-04:00'
 publishDate: '2025-03-21T10:22:36-04:00'
 draft: false
+isStarred: true
 ---
 
 ## Hello, World!
