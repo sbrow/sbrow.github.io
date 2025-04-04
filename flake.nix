@@ -83,7 +83,7 @@
           ];
 
           buildPhase = ''
-            hugo build --gc --minify --baseURL "https://sbrow.github.io"
+            hugo build --gc --minify -e production --baseURL "https://sbrow.github.io"
           '';
 
           installPhase = ''
