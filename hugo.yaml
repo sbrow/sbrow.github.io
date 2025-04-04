@@ -1,4 +1,7 @@
 baseURL: https://hugo.test/
+disableKinds:
+  - taxonomy
+  - term
 enableEmoji: true
 enableGitInfo: false
 languageCode: en-us
