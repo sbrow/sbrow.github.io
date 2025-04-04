@@ -1,0 +1,6 @@
+# github.com/sbrow/sbrow.github.io/themes/my-theme v0.0.0-00010101000000-000000000000
+# github.com/hugomods/icons/vendors/bootstrap v0.5.9
+# github.com/hugomods/icons v0.6.6
+# github.com/twbs/icons v1.11.3
+# github.com/hugomods/icons/vendors/lucide v0.3.40
+# github.com/hugomods/lucide-icons v0.331.0

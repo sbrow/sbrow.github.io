@@ -1,0 +1,23 @@
+name = "Sbrow's theme"
+license = 'MIT'
+# licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'A tailwindcss powered theme inspired by Hugo Blog Awesome'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/sbrow/sbrow.github.io/themes/my-theme'
+
+# If you have a running demo of the theme
+demosite = 'https://sbrow.github.io'
+
+# Taxonomy terms
+tags = ['blog', 'tailwindcss', 'dark']
+features = ['tailwindcss', 'minimal']
+
+[author]
+  name = 'Spencer Brower'
+  homepage = 'https://sbrow.github.io'
+
+[original]
+  author = 'Sidharth R'
+  homepage = 'https://sidh.dev'
+  repo = 'https://github.com/hugo-sid/hugo-blog-awesome'
