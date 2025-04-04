@@ -71,7 +71,26 @@
             ];
           };
 
-        #  process-compose.default.settings = { };
+        packages.default = pkgs.stdenv.mkDerivation {
+          name = "sbrow.github.io";
+          src = ./.;
+
+          nativeBuildInputs = with pkgs; [
+            git
+            unstable.hugo
+            unstable.tailwindcss_4
+            go
+          ];
+
+          buildPhase = ''
+            hugo build --gc --minify --baseURL "https://sbrow.github.io"
+          '';
+
+          installPhase = ''
+            mkdir -p $out
+            cp -r public/* $out/
+          '';
+        };
       };
     };
 }

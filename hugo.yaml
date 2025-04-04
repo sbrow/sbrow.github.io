@@ -1,6 +1,6 @@
 baseURL: https://hugo.test/
 enableEmoji: true
-enableGitInfo: true
+enableGitInfo: false
 languageCode: en-us
 title: One Idiot Developer
 markup:
