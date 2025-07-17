@@ -1,6 +1,8 @@
-/* TODO: Optimize Fonts to only use what we need */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* TODO: Optimize Fonts to only use what we need.
+   Messing with font weights didnt' seem to add any benefit
+ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20%21%22%23%24%25%26%27");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20%21%22%23%24%25%26%27");
 /* @import "tailwindcss" source(none); */
 @import "tailwindcss";
 

@@ -46,6 +46,7 @@
             ".envrc"
             ".env.local"
             "themes/**"
+            "_vendor/**"
             "**/*.jpg"
           ];
 
