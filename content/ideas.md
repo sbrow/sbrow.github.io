@@ -11,3 +11,5 @@ Here are some of my ideas for upcoming articles.
 - [Go PS](https://github.com/sbrow/ps)
 - Syntax Doesn't Matter
 - `null` !== `undefined`
+- NixOS is best OS
+- Why I use Helix
