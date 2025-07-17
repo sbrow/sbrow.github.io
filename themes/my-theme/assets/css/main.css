@@ -109,6 +109,12 @@
     @apply mb-3;
   }
 
+  .footnotes {
+    hr {
+      @apply pb-8;
+    }
+  }
+  
   pre {
     @apply -mx-5 py-2 px-4 my-2.5 overflow-x-auto rounded sm:mx-0;
 

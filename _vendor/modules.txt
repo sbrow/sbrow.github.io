@@ -1,4 +1,4 @@
-# github.com/sbrow/sbrow.github.io/themes/my-theme v0.0.0-00010101000000-000000000000
+# github.com/sbrow/sbrow.github.io/themes/my-theme v0.0.0-20250403223008-45d96c223a03
 # github.com/hugomods/icons/vendors/bootstrap v0.5.9
 # github.com/hugomods/icons v0.6.6
 # github.com/twbs/icons v1.11.3
