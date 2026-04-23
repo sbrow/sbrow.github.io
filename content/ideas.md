@@ -12,4 +12,3 @@ Here are some of my ideas for upcoming articles.
 - Syntax Doesn't Matter
 - `null` !== `undefined`
 - NixOS is best OS
-- Why I use Helix
