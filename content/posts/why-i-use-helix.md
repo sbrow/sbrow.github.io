@@ -1,7 +1,6 @@
 ---
 title: 'Why I Use Helix'
 date: '2025-07-17T11:01:08-04:00'
-draft: true
 ---
 
 Text editors are a very touchy subject for some people. If you haven't yet chosen
