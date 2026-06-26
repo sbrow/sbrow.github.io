@@ -8,11 +8,20 @@ languageCode: en-us
 title: One Idiot Developer
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
     renderer:
       unsafe: true
+    extensions:
+      extras:
+        superscript:
+          enable: true
   highlight:
     style: doom-one2
     # style: paraiso-dark
+security:
+  enableInlineShortcodes: true
 params:
   images:
     - avatar.jpg

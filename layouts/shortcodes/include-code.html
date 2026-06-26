@@ -1,0 +1,4 @@
+{{ $lang := (.Get "lang" | default "text")}}
+{{- with .Page.Resources.Get (.Get "path") -}}
+{{- highlight .Content $lang "" -}}
+{{- end -}}

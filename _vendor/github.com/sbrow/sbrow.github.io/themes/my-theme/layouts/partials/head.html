@@ -6,6 +6,6 @@
   {{- else -}}
     {{ printf "%s | %s" .Title site.Title }}
 {{- end }}</title>
-  {{ template "_internal/opengraph.html" . -}}
+  {{ partial "opengraph.html" . -}}
 {{- partialCached "head/css.html" . -}}
 {{- partialCached "head/js.html" . -}}

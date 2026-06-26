@@ -1,0 +1,26 @@
+{{ if eq .Type "alert" }}
+  {{ $styles := dict
+    "note"      "border-l-blue-500 bg-blue-950/30 text-slate-300"
+    "tip"       "border-l-green-500 bg-green-950/30 text-slate-300"
+    "important" "border-l-purple-500 bg-purple-950/30 text-slate-300"
+    "warning"   "border-l-yellow-500 bg-yellow-950/30 text-slate-300"
+    "caution"   "border-l-red-500 bg-red-950/30 text-slate-300"
+  }}
+  {{ $emojis := dict
+    "note"      "ℹ️"
+    "tip"       "💡"
+    "important" "❗"
+    "warning"   "⚠️"
+    "caution"   "❗"
+  }}
+  <blockquote class="alert {{ index $styles .AlertType }} rounded-r py-2">
+    <p class="font-bold mb-1">
+      {{ index $emojis .AlertType }} {{ or .AlertTitle (title .AlertType) }}
+    </p>
+    {{ .Text }}
+  </blockquote>
+{{ else }}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{ end }}

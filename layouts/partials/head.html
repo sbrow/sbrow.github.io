@@ -4,7 +4,7 @@
   {{- if .IsHome -}}
     {{ site.Title }}
   {{- else -}}
-    {{ printf "%s | %s" .Title site.Title }}
+    {{ printf "%s | %s" (.Title | plainify) site.Title }}
 {{- end }}</title>
   {{ partial "opengraph.html" . -}}
 {{- partialCached "head/css.html" . -}}
